@@ -1,10 +1,20 @@
-function soma(a = 3, b = 4){
-  return a + b;
+const usuario = {
+  nome : 'Jose Carlos',
+  idade : 25,
+  endereco : {
+    cidade : 'Londrina',
+    estado : 'PR'
+  }
 }
 
-const somaArrow  = (a = 3, b = 4) => a + b
+console.log(usuario)
 
-console.log(soma());
-console.log(soma(1));
-console.log(somaArrow());
-console.log(somaArrow(1));
+const {nome, idade, endereco:{cidade}} = usuario
+
+console.log(nome)
+console.log(idade)
+console.log(cidade)
+
+const mostraInfo = ({nome, idade}) => (console.log(nome, idade))
+
+mostraInfo(usuario)
