@@ -1,5 +1,10 @@
-const arr = [1,3,4,5,6]
+function soma(a = 3, b = 4){
+  return a + b;
+}
 
-const maped = arr.map(item => item * 2)
+const somaArrow  = (a = 3, b = 4) => a + b
 
-console.log(maped)
+console.log(soma());
+console.log(soma(1));
+console.log(somaArrow());
+console.log(somaArrow(1));
